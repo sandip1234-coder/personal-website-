@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: blue;
+  color: white; /* Ensure the text is readable against the blue background */
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa4e;
+}
+
+.blog-header {
+  background: #333333;
+  color: #cb1414;
+}
+
+.blog-title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.blog-description {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.blog-content {
+  background: #837c7c;
+  padding: 30px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+a {
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1e3c72;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #b81d1d;
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+/* Blog Header */
+.blog-header {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 3em;
+  font-weight: bold;
+  color:yellow;
+}
+
+.blog-description {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Blog Content */
+.blog-content {
+  background: #c53c3c;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.blog-image img {
+  border-radius: 3px;
+  box-shadow: 5px 4px 6px rgba(83, 135, 81, 0.1);
+  width: 100%;
+}
+
+.blog-text h2 {
+  margin-top: 30px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.blog-text p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #1e3c72;
+  color: #fff;
+}
+
+/* Blog Footer */
+.blog-footer {
+  background: #2a5298;
+  color: #c13333;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+.bold-black-underline {
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
