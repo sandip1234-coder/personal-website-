@@ -9,10 +9,211 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: blue;
+      color: white; /* Ensure the text is readable against the blue background */
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa4e;
+    }
+
+    .blog-header {
+      background: #333333;
+      color: #14accb;
+    }
+
+    .blog-title {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .blog-description {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .blog-content {
+      background: #837c7c;
+      padding: 30px;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      color: #1e3c72;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #1e3c72;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      color: #b81d1d;
+      margin: 0 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #ffdd57;
+    }
+
+    /* Blog Header */
+    .blog-header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .blog-title {
+      font-size: 3em;
+      font-weight: bold;
+      color: yellow;
+    }
+
+    .blog-description {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    /* Blog Content */
+    .blog-content {
+      background: #8a3cc5;
+      padding: 30px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .blog-image {
+      text-align: center;
+    }
+
+    .blog-image img {
+      border-radius: 3px;
+      box-shadow: 5px 10px 6px rgba(83, 135, 81, 0.1);
+      width: 70%; /* Adjust width as necessary */
+    }
+
+    .blog-text h2 {
+      margin-top: 30px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .blog-text p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color:black;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1e3c72;
+      color: #fff;
+    }
+
+    .footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 1, 43);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.footer .box {
+  flex: 1;
+  margin: 1rem;
+  min-width: 200px; /* Ensures boxes don't get too small */
+}
+
+.footer .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.footer .box p, .footer .box a {
+  font-size: 1.2rem;
+  color: #ccc;
+  padding: 0.5rem 0;
+  text-transform: none;
+}
+
+.footer .box a {
+  display: block;
+}
+
+.footer .box p i, .footer .box a i {
+  padding-right: 0.5rem;
+  color: #ffae00;
+}
+
+.footer .credit {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+  width: 100%;
+}
+
+.footer .fa {
+  color: #ffae00;
+  margin: 0 0.3rem;
+  font-size: 1.5rem;
+}
+
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Blog</a>
+    <a class="navbar-brand" href="#">Sandip Poudel's Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,10 +223,10 @@
           <a class="nav-link" href="../index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="../index.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#blog-contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -34,19 +235,18 @@
   <header class="blog-header">
     <div class="container">
       <h1 class="blog-title">United Nations Sustainable Development Goal 7: Affordable and Clean Energy</h1>
-      <p class="blog-date">June 4, 2023</p>
+      <p class="blog-date">June 4, 2023 - Author: Sandip Poudel - 5 minute read</p>
     </div>
   </header>
-  
+
   <section class="blog-content">
     <div class="container">
-      <div class="blog-image">
+      <div class="blog-image text-center">
         <img src="sdg.png" alt="Blog Post 1 Image" class="img-fluid">
       </div>
       <div class="blog-content">
         <h2 class="bold-black-underline">Abstract</h2>
         <p>Access to affordable, reliable, and sustainable energy is a fundamental human right and a critical driver of economic development. United Nations Sustainable Development Goal 7 (SDG 7) aims to ensure universal access to modern energy services, promote energy efficiency, and increase the share of renewable energy sources. In this research paper, we explore the challenges, progress, and geopolitical implications related to achieving SDG 7, with a focus on developing nations and the transition to renewables.</p>
-        
         <h2 class="bold-black-underline">1. Introduction</h2>
         <p>Access to affordable, reliable, and sustainable energy is a fundamental human right and a critical driver of economic development. United Nations Sustainable Development Goal 7 (SDG 7) aims to ensure universal access to modern energy services, promote energy efficiency, and increase the share of renewable energy sources. In this research paper, we explore the challenges, progress, and geopolitical implications related to achieving SDG 7, with a focus on developing nations and the transition to renewables.
 
@@ -77,7 +277,7 @@
             Achieving SDG 7 is a complex endeavor that requires a concerted effort from governments, the private sector, and civil society. It necessitates breaking down socio-economic barriers, fostering innovation, and building resilient energy systems that can withstand global challenges. The progress made thus far is promising, but the next decade will be critical in determining whether the world can meet the ambitious targets set by the United Nations and transition to a sustainable energy future for all.
             
             As the pursuit of SDG 7 continues, it is imperative to maintain a focus on the needs of developing nations and ensure that the benefits of the energy transition are shared equitably across the globe. The journey towards sustainable energy is not just an environmental or economic issue—it is a moral imperative that speaks to the core of human development and global solidarity. The future of energy is renewable, and the time to act is now. For further reading on the challenges and progress in renewable energy, consider exploring the detailed studies available.</p>
-        
+        <!-- Additional content... -->
         <h2 class="bold-black-underline">2. Challenges and Progress</h2>
         <h3 class="bold-black-underline">2.1 Energy Poverty</h3>
         <p><strong>Challenge</strong>: A significant portion of the global population lacks access to modern energy services.</p>
@@ -102,8 +302,7 @@
           <li><strong>Bioenergy</strong>: The largest renewable energy source, supplying 10% of world primary energy.</li>
           <li><strong>Solar and Wind</strong>: These sources are gaining momentum, especially in regions with abundant sunlight and wind resources.</li>
         </ul>
-
-        <h2 class="bold-black-underline">4. Conclusion</h2>
+        <h2 class="bold-black-underline">4.Conclusion</h2>
         <p>While progress has been made, achieving universal access to affordable, reliable, and clean energy remains a collective responsibility. Geopolitical cooperation, technological advancements, and sustainable policies are essential for realizing SDG 7 and securing a brighter energy future for all.</p>
         
         <p>Remember, the transition to renewables is not only an environmental imperative but also a pathway toward a more equitable and prosperous world. 🌍💡</p>
@@ -118,11 +317,31 @@
     </div>
   </section>
 
-  <footer class="blog-footer">
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2024 Sandip Poudel. All rights reserved.</p>
+      <div class="box-container">
+        <!-- <div class="box about-us">
+          <h3>About Us</h3>
+          <p>Learn more about our mission to promote sustainable energy solutions globally.</p>
+        </div> -->
+        <div class="box contact">
+          <h3>Contact</h3>
+          <p><i class="fas fa-envelope"></i> sandippoudel32@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +977-9846977468</p>
+        </div>
+        <div class="box follow-us">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="credit">
+        &copy; 2023 by Sandip Poudel. All rights reserved.
+      </div>
     </div>
   </footer>
+  
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

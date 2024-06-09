@@ -139,3 +139,21 @@ th {
   color: black;
   text-decoration: underline;
 }
+
+/* Blog Footer */
+.blog-footer {
+  background: #2a5298;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.blog-footer a {
+  color: maroon;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
